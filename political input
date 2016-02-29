@@ -21,7 +21,7 @@
         if (isset($_POST['submit'])) {
             if (isset($_POST['politylevel']))
             {
-                echo "You have selected :".$_POST['politylevel'];
+                print "You have selected :".$_POST['politylevel'];
             }
         }
         ?>
