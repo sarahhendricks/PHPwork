@@ -1,0 +1,29 @@
+/**
+ * Created by PhpStorm.
+ * User: josephfoley
+ * Date: 2/28/16
+ * Time: 9:22 PM
+ */
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form>
+            <input type="radio" name="politylevel" value="Low-Central" checked>Low-Central<br>
+            <input type="radio" name="politylevel" value="Medium-Central">Medium-Central<br>
+            <input type="radio" name="politylevel" value="High-Central">High-Central<br>
+            <input type="submit" name ="submit" value= "Get Selected Value"/>
+        </form>
+        <?php
+        if (isset($_POST['submit'])) {
+            if (isset($_POST['politylevel']))
+            {
+                echo "You have selected :".$_POST['politylevel'];
+            }
+        }
+        ?>
+</body>
+</html>
