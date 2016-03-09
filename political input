@@ -11,19 +11,11 @@
         <title></title>
     </head>
     <body>
-        <form>
+        <form action = "newPageToShowUp.php" method = "get">
             <input type="radio" name="politylevel" value="Low-Central" checked>Low-Central<br>
             <input type="radio" name="politylevel" value="Medium-Central">Medium-Central<br>
             <input type="radio" name="politylevel" value="High-Central">High-Central<br>
             <input type="submit" name ="submit" value= "Get Selected Value"/>
         </form>
-        <?php
-        if (isset($_POST['submit'])) {
-            if (isset($_POST['politylevel']))
-            {
-                print "You have selected :".$_POST['politylevel'];
-            }
-        }
-        ?>
 </body>
 </html>
